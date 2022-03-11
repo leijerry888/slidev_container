@@ -10,7 +10,7 @@ WORKDIR /root
 COPY --chown=root:root entrypoint.sh /root
 
 #Make the entrypoint script executable and install npm
-RUN chmod 700 entrypoint.sh && npm install @slidev/cli @slidev/theme-default
+RUN chmod 700 entrypoint.sh && npm i -g @slidev/cli @slidev/theme-default
 
 WORKDIR /root/slides
 
